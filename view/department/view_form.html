@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <img style="margin: 0px; width: 270px !important; margin: 5px !important; margin-left: 0px !important;"
+                    src="/public/image/logo.png" alt="logo" class="logo-default">
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <img src="/public/image/user.png" style="scale: 2.5; margin-right: 15px;" class="rounded-circle"
+                        height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b5e0ff;">
+        <a class="navbar-brand" href="home.html" style="padding-left: 50px;">Home Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="internship_processes.html">Internship Processes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="companies.html">Companies</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav d-flex flex-row me-1" style="padding-right: 50px;">
+            <li class="nav-item" style="padding-left: 20px;">
+                <a class="nav-link" href="/view/login.html">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">EVALUATION FORM</h2>
+    </div>
+
+    <div class="container bootstrap snippets bootdey" style="margin-bottom: 20px;">
+        <div class="row ng-scope">
+            <div class="col-md-2"></div>
+            <div class="col-md-15">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="row pv-lg">
+                                <div class="col-lg-15">
+                                    <form class="form-horizontal ng-pristine ng-valid">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <!-- Full Name -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label" for="inputContact1"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Full
+                                                        Name:</label>
+                                                    <label id="fullName" for="text"></label>
+                                                </div>
+                                                <!-- Internship Number -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label" for="inputContact3"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Internship
+                                                        Number:</label>
+                                                    <label id="internshipNumber" for="text"></label>
+                                                </div>
+                                                <!-- Company Name -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label" for="inputContact4"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Company
+                                                        Name:</label>
+                                                    <label id="companyName" for="text"></label>
+                                                </div>
+                                                <!-- Company E-mail -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label" for="inputContact5"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Company
+                                                        E-mail:</label>
+                                                    <label id="companyEmail" for="text"></label>
+                                                </div>
+                                                <!-- Internship Start Date -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label" for="inputContact6"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Internship
+                                                        Start Date:</label>
+                                                    <label id="internshipStart" for="text"></label>
+                                                </div>
+                                                <!-- Internship Finish Date -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label" for="inputContact7"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Internship
+                                                        Finish Date:</label>
+                                                    <label id="internshipFinish" for="text"></label>
+                                                </div>
+                                                <!-- Internship Duration -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label" for="inputContact8"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Internship
+                                                        Duration:</label>
+                                                    <label id="internshipDuration" for="text"></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1"></div> <!-- Added this line for spacing -->
+                                            <div class="col-md-7">
+                                                <!-- Evaluation fields -->
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="inputContact9"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Sufficiency
+                                                        of internship report:</label>
+                                                    <label id="reportSufficiency" for="text"
+                                                        style="margin-left: 20px;"></label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="inputContact9"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">General
+                                                        level of achievement in internship studies:</label>
+                                                    <label id="achievementLevel" for="text"
+                                                        style="margin-left: 20px;"></label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="inputContact9"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Willingness
+                                                        to acquire new professional knowledge and
+                                                        self-improvement:</label>
+                                                    <label id="willingness" for="text"
+                                                        style="margin-left: 20px;"></label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="inputContact9"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Attendance,
+                                                        effort spent and discipline:</label>
+                                                    <label id="attendance" for="text"
+                                                        style="margin-left: 20px;"></label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="inputContact9"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Behavior
+                                                        and communication with supervisors and colleagues:</label>
+                                                    <label id="behavior" for="text" style="margin-left: 20px;"></label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="inputContact9"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Ability
+                                                        to apply the gained knowledge:</label>
+                                                    <label id="knowledgeApplication" for="text"
+                                                        style="margin-left: 20px;"></label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label" for="inputContact9"
+                                                        style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Interest
+                                                        in contemporary problems of profession:</label>
+                                                    <label id="professionalInterest" for="text"
+                                                        style="margin-left: 20px;"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Additional comments -->
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="inputContact9"
+                                                style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Additional
+                                                comments about the intern (If any):</label>
+                                            <div class="col-sm-8"
+                                                style="border: 1px solid lightgray; border-radius: 5px; padding: 10px;">
+                                                <span id="additionalComments"></span>
+                                            </div>
+                                        </div>
+                                        <!-- Authorized person details -->
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="inputContact9"
+                                                style="margin-top: 10px; font-weight: bold; margin-bottom: 10px;">Title,
+                                                name, and contact information of the authorized person:</label>
+                                            <div class="col-sm-8"
+                                                style="border: 1px solid lightgray; border-radius: 5px; padding: 10px;">
+                                                <span id="authorizedPersonInfo"></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            2024 © FMV Işık University - Sule İlkbahar & Nilhan Topçu
+        </div>
+    </footer>
+
+
+    <script src="/Fetch API/department/view_form.js"></script>
+
+
+</body>
+
+</html>

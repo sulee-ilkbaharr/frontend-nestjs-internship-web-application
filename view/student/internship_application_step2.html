@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- HTML2PDF CDN link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.05);
+            text-align: center;
+            padding: 3px;
+        }
+
+        #doc-content {
+            padding: 20px;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <img src="/public/image/logo.png" alt="logo" class="logo-default"
+                        style="width: 270px; margin: 5px 0 5px 0;">
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown">
+                        <img src="/public/image/user.png" class="rounded-circle" height="25" alt="User Avatar"
+                            loading="lazy" style="transform: scale(2.5); margin-right: 15px;">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Secondary Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b5e0ff;">
+            <a class="navbar-brand" href="home.html" style="padding-left: 50px;">Home Page</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="internship_application.html">Internship Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="upload_internship_application_form.html">Upload Internhsip Application
+                            Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_internship_applications.html">My Internship Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="internship_reports.html">Internship Reports</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="navbar-nav d-flex flex-row me-1" style="padding-right: 50px;">
+                <li class="nav-item" style="padding-left: 20px;">
+                    <a class="nav-link" href="/view/login.html">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container content" style="margin-top: 30px;">
+            <div class="card">
+                <div class="card-header" style="color:#007bff;">
+                    INTERNSHIP APPLICATION FORM - STEP 2
+                </div>
+                <div class="container my-5">
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <p>Internship Application Form:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <button id="download-docx" class="btn btn-primary">Download Form <i
+                                    class="fa fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <p>Employer Information Form:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <button id="download-docx1" class="btn btn-primary">Download Form <i
+                                    class="fa fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <p>Declaration and Commitment Document:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <button id="download-docx2" class="btn btn-primary">Download Form <i
+                                    class="fa fa-download"></i></button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="nextButton">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-light text-center text-lg-start">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                2024 © FMV Işık University - Sule İlkbahar & Nilhan Topçu
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS ve bağımlılıkları -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="/Fetch API/student/internship_application_step2.js"></script>
+
+
+</body>
+
+</html>

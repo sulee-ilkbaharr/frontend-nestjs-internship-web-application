@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .logo-default {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-center">
+            <img src="/public/image/logo.png" alt="logo" class="logo-default" style="scale: 3;">
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">INTERNSHIP ASSESSMENT FORM</h2>
+    </div>
+
+    <div class="container bootstrap snippets bootdey" style="margin-bottom: 20px;">
+        <div class="row ng-scope">
+            <div class="col-md-2"></div>
+            <div class="col-md-15">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="row pv-lg">
+                                <div class="col-lg-15">
+                                    <form id="assessmentForm" class="form-horizontal ng-pristine ng-valid">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-4 col-form-label" for="inputContact1"
+                                                        style="font-weight: bold;">Full Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputContact1"
+                                                            name="fullName" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-4 col-form-label" for="inputContact2"
+                                                        style="font-weight: bold;">Internship Number:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputContact2"
+                                                            name="internshipNumber" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-4 col-form-label" for="inputContact3"
+                                                        style="font-weight: bold;">Company Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputContact3"
+                                                            name="companyName" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-4 col-form-label" for="inputContact4"
+                                                        style="font-weight: bold;">Company E-mail:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="email" class="form-control" id="inputContact4"
+                                                            name="companyEmail" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-4 col-form-label" for="inputContact5"
+                                                        style="font-weight: bold;">Internship Start:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputContact5"
+                                                            name="internshipDate" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-4 col-form-label" for="inputContact6"
+                                                        style="font-weight: bold;">Internship Finish:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputContact6"
+                                                            name="internshipDuration" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-4 col-form-label" for="inputContact7"
+                                                        style="font-weight: bold;">Internship Duration:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputContact7"
+                                                            name="internshipDuration" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-6 col-form-label" for="inputContact8"
+                                                        style="font-weight: bold;">Sufficiency of internship
+                                                        report:</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" id="inputContact8"
+                                                            name="reportSufficiency" required>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-6 col-form-label" for="inputContact9"
+                                                        style="font-weight: bold;">General level of achievement in
+                                                        internship studies:</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" id="inputContact9"
+                                                            name="achievementLevel" required>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-6 col-form-label" for="inputContact10"
+                                                        style="font-weight: bold;">Willingness to acquire new
+                                                        professional knowledge and self-improvement:</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" id="inputContact10"
+                                                            name="willingness" required>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-6 col-form-label" for="inputContact11"
+                                                        style="font-weight: bold;">Attendance, effort spent and
+                                                        discipline:</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" id="inputContact11"
+                                                            name="attendance" required>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-6 col-form-label" for="inputContact12"
+                                                        style="font-weight: bold;">Behavior and communication with
+                                                        supervisors and colleagues:</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" id="inputContact12" name="behavior"
+                                                            required>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-6 col-form-label" for="inputContact13"
+                                                        style="font-weight: bold;">Ability to apply the gained
+                                                        knowledge:</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" id="inputContact13"
+                                                            name="knowledgeApplication" required>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-6 col-form-label" for="inputContact14"
+                                                        style="font-weight: bold;">Interest in contemporary problems of
+                                                        profession:</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-select" id="inputContact14"
+                                                            name="professionalInterest" required>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label" for="inputContact15"
+                                                style="font-weight: bold;">Additional comments about the intern (If
+                                                any):</label>
+                                            <div class="col-sm-8">
+                                                <textarea class="form-control" id="inputContact15"
+                                                    name="additionalComments" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label" for="inputContact16"
+                                                style="font-weight: bold;">Title, name, and contact information of the
+                                                authorized person:</label>
+                                            <div class="col-sm-8">
+                                                <textarea class="form-control" id="inputContact16"
+                                                    name="authorizedPersonInfo" rows="2" required></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-8 offset-sm-4">
+                                                <button type="submit" class="btn btn-primary"
+                                                    style="margin-top: 20px;">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            2024 © FMV Işık University - Center for Educational Technologies
+        </div>
+    </footer>
+
+    <script src="/Fetch API/internship_assessment_form/internship_assessment_form.js"></script>
+
+</body>
+
+</html>

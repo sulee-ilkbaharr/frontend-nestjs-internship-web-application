@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/internship_application_approval.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Internship Application Approval</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .bg-body-tertiary {
+            background-color: #f8f9fa !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <img style="margin: 0px; width: 270px !important; margin: 5px !important; margin-left: 0px !important;"
+                    src="/public/image/logo.png" alt="logo" class="logo-default">
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <img src="/public/image/user.png" style="scale: 2.5; margin-right: 15px;" class="rounded-circle"
+                        height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b5e0ff;">
+        <a class="navbar-brand" href="home.html" style="padding-left: 50px;">Home Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="internship_processes.html">Internship Processes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="companies.html">Companies</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav d-flex flex-row me-1" style="padding-right: 50px;">
+            <li class="nav-item" style="padding-left: 20px;">
+                <a class="nav-link" href="/view/login.html">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="container mt-4">
+            <h2 class="text-center mb-4">INTERNSHIP APPLICATION APPROVAL</h2>
+
+            <div class="container bootstrap snippets bootdey">
+                <div class="row ng-scope">
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body text-center">
+                                <div class="pv-lg">
+                                    <img class="center-block img-responsive img-circle img-thumbnail thumb96"
+                                        src="/public/image/user.png" alt="Contact">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row pv-lg">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-8">
+                                        <form class="form-horizontal ng-pristine ng-valid">
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact1">Full Name:</label>
+                                                <label id="fullName"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact2">Student ID:</label>
+                                                <label id="studentId"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact3">Internship Number:</label>
+                                                <label id="internshipNumber"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact4">Company Name:</label>
+                                                <label id="companyName"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact5">Company E-mail:</label>
+                                                <label id="companyEmail"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact6">Department Name:</label>
+                                                <label id="departmentName"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact7">Internship Start Date:</label>
+                                                <label id="startDate"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact7">Internship Finish Date:</label>
+                                                <label id="finishDate"></label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4" style="font-weight: bold; margin-bottom: 12px;"
+                                                    for="inputContact8">Internship Duration:</label>
+                                                <label for="text">20 days</label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-4 col-sm-8">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-primary btn-lg"
+                                                            onclick="updateStatus('WAITING_IN_DEAN')">ACCEPTED</button>
+                                                        <button type="button" class="btn btn-secondary btn-lg"
+                                                            onclick="updateStatus('REJECT_FROM_DEPARTMENT')">REJECT</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed botto-0 end-0 p-3">
+        <div id="statusToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toastBody"></div>
+        </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            2024 © FMV Işık University - Sule İlkbahar & Nilhan Topçu
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="/Fetch API/department/internship_application_approval.js"></script>
+
+</body>
+
+</html>

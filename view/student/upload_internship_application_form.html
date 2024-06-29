@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Step 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.05);
+            text-align: center;
+            padding: 3px;
+            margin-top: auto; /* Footer'ın en altta kalmasını sağlar */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <img src="/public/image/logo.png" alt="logo" class="logo-default"
+                    style="width: 270px; margin: 5px 0 5px 0;">
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <img src="/public/image/user.png" class="rounded-circle" height="25" alt="User Avatar"
+                        loading="lazy" style="transform: scale(2.5); margin-right: 15px;">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b5e0ff;">
+        <a class="navbar-brand" href="home.html" style="padding-left: 50px;">Home Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="internship_application.html">Internship Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="upload_internship_application_form.html">Upload Internhsip Application
+                        Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="my_internship_applications.html">My Internship Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="internship_reports.html">Internship Reports</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav d-flex flex-row me-1" style="padding-right: 50px;">
+            <li class="nav-item" style="padding-left: 20px;">
+                <a class="nav-link" href="/view/login.html">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="container content" style="margin-top: 30px;">
+            <div class="card">
+                <div class="card-header" style="color:#007bff;">
+                    INTERNSHIP APPLICATION FORM - STEP 3
+                </div>
+                <div class="container my-5">
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <p>Internship Application Form:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="internshipApplicationForm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <p>Employer Information Form:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="employerInformationForm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <p>Declaration and Commitment Document:</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="declarationCommitmentDocument">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <p>ID Card Photocopy (in PDF):</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="idCardPhotocopy">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="nextButton">Upload All Forms</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-light text-center text-lg-start">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                2024 © FMV Işık University - Sule İlkbahar & Nilhan Topçu
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', async function (event) {
+            event.preventDefault(); // Formun varsayılan gönderimini durdurur
+
+            const internshipApplicationForm = document.getElementById('internshipApplicationForm').files[0];
+            const employerInformationForm = document.getElementById('employerInformationForm').files[0];
+            const declarationCommitmentDocument = document.getElementById('declarationCommitmentDocument').files[0];
+            const idCardPhotocopy = document.getElementById('idCardPhotocopy').files[0];
+
+            if (!internshipApplicationForm || !employerInformationForm || !declarationCommitmentDocument || !idCardPhotocopy) {
+                alert('Lütfen tüm dosyaları yükleyin.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('Internship_Application_Form', internshipApplicationForm);
+            formData.append('Employer_Information_Form', employerInformationForm);
+            formData.append('Declaration_Commitment_Document', declarationCommitmentDocument);
+            formData.append('ID_Card_Photocopy', idCardPhotocopy);
+
+            const internshipId = localStorage.getItem('internshipId'); // localStorage'dan alınan internshipId
+
+            if (!internshipId) {
+                alert('Internship ID bulunamadı.');
+                return;
+            }
+
+            try {
+                const response = await fetch(`http://localhost:3000/files/${internshipId}/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    console.log('Files uploaded successfully', result);
+                    alert('The files were uploaded successfully.');
+                    window.location.href = '/view/student/home.html'; // Sonraki adıma yönlendirin
+                } else {
+                    console.error('Failed to upload files', response.statusText);
+                    alert('An error occurred while loading files.');
+                }
+            } catch (error) {
+                console.error('Error uploading files', error);
+                alert('An error occurred while loading files.');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

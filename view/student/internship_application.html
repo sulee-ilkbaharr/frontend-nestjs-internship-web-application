@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link href="/public/css/internship_application.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- TOP Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <img src="/public/image/logo.png" alt="logo" class="logo-default"
+                    style="width: 270px; margin: 5px 0 5px 0;">
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <img src="/public/image/user.png" class="rounded-circle" height="25" alt="User Avatar"
+                        loading="lazy" style="transform: scale(2.5); margin-right: 15px;">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b5e0ff;">
+        <a class="navbar-brand" href="home.html" style="padding-left: 50px;">Home Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="internship_application.html">Internship Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="upload_internship_application_form.html">Upload Internship Application
+                        Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="my_internship_applications.html">My Internship Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="internship_reports.html">Internship Reports</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav d-flex flex-row me-1" style="padding-right: 50px;">
+            <li class="nav-item" style="padding-left: 20px;">
+                <a class="nav-link" href="/view/login.html">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="margin-top: 30px;">
+        <div class="card">
+            <!-- Form -->
+            <div class="card-header" style="color:#007bff;">
+                INTERNSHIP APPLICATION FORM - STEP 1
+            </div>
+            <div class="container my-5">
+                <form id="internshipForm">
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="companyName" class="form-label">Company Name</label>
+                                <input list="companyNames" class="form-control" id="companyName"
+                                    aria-describedby="companyName">
+                                <datalist id="companyNames">
+                                    <!-- Dinamik olarak eklenecek -->
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="departmentName" class="form-label">Department Name</label>
+                                <input list="departmentNames" class="form-control" id="departmentName">
+                                <datalist id="departmentNames">
+                                    <!-- Dinamik olarak eklenecek -->
+                                </datalist>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="productionArea" class="form-label">Production/Service Area</label>
+                                <input type="text" class="form-control" id="productionArea">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="companyPhoneNumber" class="form-label">Company Phone Number</label>
+                                <input type="text" class="form-control" id="companyPhoneNumber">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="companyEmailAddress" class="form-label">Company Email Address</label>
+                                <input type="email" class="form-control" id="companyEmailAddress">
+                            </div>
+                            <div class="mb-3">
+                                <label for="internshipNumber" class="form-label">Internship Number</label>
+                                <input list="internshipNumbers" class="form-control" id="internshipNumber"
+                                    aria-describedby="internshipNumber">
+                                <datalist id="internshipNumbers">
+                                    <option value="First">
+                                    <option value="Secondary">
+                                    <option value="Volunteer">
+                                        <!-- Daha fazla seçenek eklenebilir -->
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="companyAddress" class="form-label">Company Address</label>
+                                <input type="text" class="form-control" id="companyAddress" style="height: 126px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="sameDepartmentGraduate" class="form-label"><b>Is there anyone who graduated
+                                        from the same department as you in the department where you will do your
+                                        internship?</b></label><br>
+                                <input list="sameDepartmentGraduateOptions" class="form-control"
+                                    id="sameDepartmentGraduate" aria-describedby="sameDepartmentGraduate">
+                                <datalist id="sameDepartmentGraduateOptions">
+                                    <option value="yes">
+                                    <option value="no">
+                                        <!-- Daha fazla seçenek eklenebilir -->
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="correspondingPerson" class="form-label">Corresponding Person Name:</label>
+                                <input type="text" class="form-control" id="correspondingPerson"
+                                    style="margin-top: 23px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="internshipDays" class="form-label">Internship Days</label>
+                                <input type="text" class="form-control" id="internshipDays"
+                                    placeholder="Monday, Tuesday, Wednesday, Thursday ...">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="datepicker" class="font-weight-bold">Internship Dates:</label>
+                                <div class="input-group date" id="datepicker">
+                                    <input type="text" class="form-control" id="dates"
+                                        placeholder="Pick the multiple dates">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="startDate" style="padding-bottom: 10px; font-weight: bold;">Internship Start
+                                    Date:</label>
+                                <div class="input-group date" id="start_datepicker">
+                                    <input type="text" class="form-control" id="startDate" placeholder="dd/mm/yyyy">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="finishDate" style="padding-bottom: 10px; font-weight: bold;">Internship
+                                    Finish Date:</label>
+                                <div class="input-group date" id="finish_datepicker">
+                                    <input type="text" class="form-control" id="finishDate" placeholder="dd/mm/yyyy">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Next</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            2024 © FMV Işık University - Sule İlkbahar & Nilhan Topçu
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="/Fetch API/student/internship_application.js"></script>
+
+
+</body>
+
+</html>

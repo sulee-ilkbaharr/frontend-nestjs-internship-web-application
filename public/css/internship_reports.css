@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: Arial, sans-serif; /* varsayılan bir yazı tipi kullanalım */
+    margin: 0; /* Sayfa kenar boşluklarını sıfırla */
+    padding: 0; /* Sayfa iç boşluklarını sıfırla */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Tabloyu yatayda ortala */
+    align-items: center; /* Tabloyu dikeyde ortala */
+    height: 100vh; /* Sayfanın tamamını kaplayacak şekilde yükseklik */
+}
+
+.table-container {
+    width: 80%; /* Tablo containerının genişliğini ayarla */
+    text-align: center; /* Tablo containerını ortala */
+}
+
+.table {
+    width: 100%; /* Tablonun genişliğini ayarla */
+    margin-top: 20px; /* Tablo ile container arasında biraz boşluk bırak */
+}
+
+th, td {
+    text-align: center; /* Hücre içeriğini ortala */
+    padding: 10px; /* İçeriği hücre içinde biraz daha genişlet */
+}
+
+.table-title {
+    text-align: left; /* Başlığı sola hizala */
+}

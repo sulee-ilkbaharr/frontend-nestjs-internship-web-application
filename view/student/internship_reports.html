@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Reports</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .approval-icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .bg-body-tertiary {
+            background-color: #f8f9fa !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- TOP Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <img style="margin: 0px; width: 270px !important; margin: 5px !important; margin-left: 0px !important;"
+                    src="/public/image/logo.png" alt="logo" class="logo-default">
+            </div>
+            <div class="d-flex align-items-center">
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <img src="/public/image/user.png" style="scale: 2.5; margin-right: 15px;" class="rounded-circle"
+                        height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b5e0ff;">
+        <a class="navbar-brand" href="home.html" style="padding-left: 50px;">Home Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="internship_application.html">Internship Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="upload_internship_application_form.html">Upload Internship Application
+                        Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="my_internship_applications.html">My Internship Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="internship_reports.html">Internship Reports</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav d-flex flex-row me-1" style="padding-right: 50px;">
+            <li class="nav-item" style="padding-left: 20px;">
+                <a class="nav-link" href="/view/login.html">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="container mt-4">
+            <h2 class="text-center mb-4">MY REPORTS</h2>
+        </div>
+
+        <div class="container mt-5">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Internship Course Code </th>
+                        <th> Internship Reports </th>
+                        <th>Evaluation</th>
+                    </tr>
+                </thead>
+                <tbody id="internshipTableBody">
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            2024 © FMV Işık University - Sule İlkbahar & Nilhan Topçu
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="/Fetch API/student/internship_reports.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        .form-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-header,
+        .form-footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .photo-placeholder {
+            width: 150px;
+            height: 200px;
+            background-color: #e9ecef;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 200px;
+            color: #6c757d;
+            border: 1px solid #ced4da;
+        }
+
+        .form-group p {
+            margin: 0;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <img src="/public/image/logo.svg">
+            <div class="form-header">
+                <h1>Internship Application Form</h1>
+                <p>To whom it may concern,</p>
+                <p>Students of the ..................................Department / Program are required to complete a
+                    compulsory internship in business firms and organizations before the end of their study period. We
+                    would
+                    like to thank you for your support to our student whose details are given below during her/his
+                    internship at your company for ….... days.</p>
+            </div>
+
+            <form id="element-to-print">
+                <!-- Student Information Section -->
+                <div class="form-section">
+                    <h3>Student Information</h3>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="studentId" class="col-sm-4 col-form-label">ID No:</label>
+                                <div class="col-sm-8">
+                                    <p><!--studentId--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="studentName" class="col-sm-4 col-form-label">Name Surname:</label>
+                                <div class="col-sm-8">
+                                    <p><!--studentName--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="studentNo" class="col-sm-4 col-form-label">Student No:</label>
+                                <div class="col-sm-8">
+                                    <p><!--studentNo--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="department" class="col-sm-4 col-form-label">Department/Program:</label>
+                                <div class="col-sm-8">
+                                    <p><!--department--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="internshipNo" class="col-sm-4 col-form-label">Internship No:</label>
+                                <div class="col-sm-8">
+                                    <p><!--internshipNumber--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-4 col-form-label">E-Mail:</label>
+                                <div class="col-sm-8">
+                                    <p><!--email--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="cellPhone" class="col-sm-4 col-form-label">Phone Number:</label>
+                                <div class="col-sm-8">
+                                    <p><!--cellPhone--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="address" class="col-sm-4 col-form-label">Address:</label>
+                                <div class="col-sm-8">
+                                    <p><!--address--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship Company Section -->
+                <div class="form-section">
+                    <h3>Internship Company</h3>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="companyName" class="col-sm-4 col-form-label">Company Name:</label>
+                                <div class="col-sm-8">
+                                    <p><!--companyName--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="companyAddress" class="col-sm-4 col-form-label">Company Address:</label>
+                                <div class="col-sm-8">
+                                    <p><!--companyAddress--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="productionArea" class="col-sm-4 col-form-label">Production/ Service
+                                    Area:</label>
+                                <div class="col-sm-8">
+                                    <p><!--productionArea--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="companyPhoneNumber" class="col-sm-4 col-form-label">Company Phone:</label>
+                                <div class="col-sm-8">
+                                    <p><!--companyPhoneNumber--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="fax" class="col-sm-4 col-form-label">Fax:</label>
+                                <div class="col-sm-8">
+                                    <p><!--fax--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="companyEmail" class="col-sm-4 col-form-label">Company E-Mail
+                                    Address:</label>
+                                <div class="col-sm-8">
+                                    <p><!--companyEmailAddress--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="startDate" class="col-sm-4 col-form-label">Internship Starting Date:</label>
+                                <div class="col-sm-8">
+                                    <p><!--startDate--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="finishDate" class="col-sm-4 col-form-label">Internship Finish Date:</label>
+                                <div class="col-sm-8">
+                                    <p><!--finishDate--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="internshipDays" class="col-sm-4 col-form-label">Working Days:</label>
+                                <div class="col-sm-8">
+                                    <p>20</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="internshipSchedule" class="col-sm-4 col-form-label">Internship Days
+                                    Schedule:</label>
+                                <div class="col-sm-8">
+                                    <p><!--internshipDays--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="internshipType" class="col-sm-4 col-form-label">Internship Application Type:</label>
+                        <div class="col-sm-8">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="internshipType" id="onSiteInternship"
+                                    value="On-site Internship">
+                                <label class="form-check-label" for="onSiteInternship">On-site Internship</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="internshipType" id="onlineInternship"
+                                    value="Online Internship">
+                                <label class="form-check-label" for="onlineInternship">Online Internship</label>
+                            </div>
+                            <p><!--internshipType--></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Authorized Person Section -->
+                <div class="form-section">
+                    <h3>Company Authorized Person</h3>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="correspondingPerson" class="col-sm-4 col-form-label">Name Surname:</label>
+                                <div class="col-sm-8">
+                                    <p><!--correspondingPerson--></p>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="jobTitle" class="col-sm-4 col-form-label">Job and Title:</label>
+                                <div class="col-sm-8">
+                                    <p><!--jobTitle--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-4 col-form-label">Date:</label>
+                                <div class="col-sm-8">
+                                    <p><!--date--></p>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="correspondingEmail" class="col-sm-4 col-form-label">E-Mail:</label>
+                                <div class="col-sm-8">
+                                    <p><!--correspondingEmail--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="signatureStamp" class="col-sm-4 col-form-label">Signature / Stamp:</label>
+                        <div class="col-sm-8">
+                            <p><!--signatureStamp--></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Approvals Section -->
+                <div class="form-section">
+                    <h3>Student Approval</h3>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="studentSignature" class="col-sm-4 col-form-label">Student Signature:</label>
+                                <div class="col-sm-8">
+                                    <p><!--studentSignature--></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group row">
+                                <label for="approvalDate" class="col-sm-4 col-form-label">Date:</label>
+                                <div class="col-sm-8">
+                                    <p><!--approvalDate--></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

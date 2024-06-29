@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İşveren Bilgi Formu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        .form-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-header,
+        .form-footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <img src="/public/image/logo.svg">
+        <div class="form-header">
+            <h1>Employer Information Form</h1>
+        </div>
+
+        <form id="employer-info-form">
+            <!-- Kurum Bilgileri Section -->
+            <div class="form-section">
+                <h3>Internship Institution</h3>
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="companyName" class="col-sm-4 col-form-label">Name:</label>
+                            <div class="col-sm-8">
+                                <p><!--companyName--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="companyAddress" class="col-sm-4 col-form-label">Address:</label>
+                            <div class="col-sm-8">
+                                <p><!--companyAddress--></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="productionArea" class="col-sm-4 col-form-label">Production/ Service
+                                Area:</label>
+                            <div class="col-sm-8">
+                                <p><!--productionArea--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="companyPhoneNumber" class="col-sm-4 col-form-label">Telephone:</label>
+                            <div class="col-sm-8">
+                                <p><!--companyPhoneNumber--></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="fax" class="col-sm-4 col-form-label">Faks:</label>
+                            <div class="col-sm-8">
+                                <p><!--fax--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="companyEmailAddress" class="col-sm-4 col-form-label">E-mail address:</label>
+                            <div class="col-sm-8">
+                                <p><!--companyEmailAddress--></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="personnelCount" class="col-sm-8 col-form-label">Number of Personnel Working in
+                        the Institution:</label>
+                    <div class="col-sm-8">
+                        <p><!--personnelCount--></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- İşveren Bilgileri Section -->
+            <div class="form-section">
+                <h3>EMPLOYER OR AUTHORITY</h3>
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="correspondingPerson" class="col-sm-4 col-form-label">Name Surname:</label>
+                            <div class="col-sm-8">
+                                <p><!--correspondingPerson--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="positionTitle" class="col-sm-4 col-form-label">Position and Title:</label>
+                            <div class="col-sm-8">
+                                <p><!--positionTitle--></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="signatureStamp" class="col-sm-4 col-form-label">Signature/ Stamp:</label>
+                            <div class="col-sm-8">
+                                <p><!--signatureStamp--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="employerEmail" class="col-sm-4 col-form-label">E-mail address:</label>
+                            <div class="col-sm-8">
+                                <p><!--correspondingPersonEmail--></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="date" class="col-sm-4 col-form-label">Date:</label>
+                    <div class="col-sm-8">
+                        <p><!--date--></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Öğrenci Bilgileri Section -->
+            <div class="form-section">
+                <h3>STUDENT INFORMATION</h3>
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="studentName" class="col-sm-4 col-form-label">NAME SURNAME OF THE TRAINEE
+                                STUDENT:</label>
+                            <div class="col-sm-8">
+                                <p><!--studentName--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="studentNumber" class="col-sm-4 col-form-label">STUDENT NUMBER:</label>
+                            <div class="col-sm-8">
+                                <p><!--studentNumber--></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="internshipDates" class="col-sm-4 col-form-label">INTERNSHIP START
+                                DATE:</label>
+                            <div class="col-sm-8">
+                                <p><!--startDate--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="internshipDates" class="col-sm-4 col-form-label">INTERNSHIP FINISH
+                                DATE:</label>
+                            <div class="col-sm-8">
+                                <p><!--finishDate--></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="paidStatus" class="col-sm-4 col-form-label">Will TRAINING STUDENT BE PAID?:</label>
+                    <div class="col-sm-8">
+                        <p><!--paidStatus--></p>
+                        Evet ☐ Hayır ☐
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <h8><b>NOTE: This field will be filled if the intern student will be paid. It is important to fill it out on a
+                    computer.</b></h8>
+
+                <div class="form-group row">
+                    <label for="internshipTitle" class="col-sm-5 col-form-label">TITLE OF THE INTERNSHIP
+                        INSTITUTION:</label>
+                    <div class="col-sm-8">
+                        <p><!--internshipTitle--></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="iban" class="col-sm-5 col-form-label">INTERNSHIP INSTITUTION IBAN
+                        NO:</label>
+                    <div class="col-sm-8">
+                        <p><!--iban--></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="accountNumber" class="col-sm-5 col-form-label">INTERNSHIP INSTITUTION
+                        ACCOUNT
+                        NUMBER:</label>
+                    <div class="col-sm-8">
+                        <p><!--accountNumber--></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="bankName" class="col-sm-5 col-form-label">INTERNSHIP INSTITUTION BANK NAME -
+                        BRANCH CODE:</label>
+                    <div class="col-sm-8">
+                        <p><!--bankName--></p>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

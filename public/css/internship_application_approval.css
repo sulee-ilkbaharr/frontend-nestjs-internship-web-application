@@ -1,0 +1,21 @@
+.form-horizontal .form-group {
+    margin-bottom: 10px; /* Aralık */
+}
+
+.form-horizontal .control-label {
+    width: 20%; /* Etiketlerin genişliği */
+    font-weight: bold; /* Kalın font */
+}
+
+.form-horizontal label[for="text"] {
+    display: inline-block;
+    width: 50%; /* İçerik alanının genişliği */
+}
+
+.form-horizontal .btn-group {
+    margin-top: 20px; /* Buton grubunun üst aralığı */
+}
+
+.form-horizontal .btn {
+    width: 150px; /* Buton genişliği */
+}
